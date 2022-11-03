@@ -1,8 +1,9 @@
+package lesson_2;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirstTest_Class {
-
+public class FirstTestClass {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -16,9 +17,5 @@ public class FirstTest_Class {
 
         driver.close();
 
-
-
     }
-
-
 }
