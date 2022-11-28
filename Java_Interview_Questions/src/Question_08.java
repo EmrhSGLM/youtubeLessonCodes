@@ -13,32 +13,33 @@ public class Question_08 {
 
 		 */
         Scanner scan = new Scanner(System.in);
-        System.out.print("1. String ifadeyi giriniz : ");
+        System.out.print("1. String ifadeyi giriniz :");
         String str1 = scan.next();
-        System.out.print("2. String ifadeyi giriniz : ");
+        System.out.print("2. String ifadeyi giriniz :");
         String str2 = scan.next();
         Boolean result = true;
 
         if(str1.length() == str2.length()){
 
-            for(int i=0 ; i<str1.length() ; i++){
+            for(int i=0 ; i<str1.length() ;i++){
 
                 if(str1.toLowerCase().contains(str2.toLowerCase().substring(i,i+1))){
                     continue;
-                }else {
+                }else{
                     result = false;
                     break;
                 }
             }
 
-        }else{
+
+        }else {
             result = false;
         }
 
         if(result){
-            System.out.println("Anagram");
-        }else{
-            System.out.println("Anagram Degil");
+            System.out.println("İfadeler Anagram dır.");
+        }else {
+            System.out.println("İfadeler Anagram Degildir.");
         }
 
 
