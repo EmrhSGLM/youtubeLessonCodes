@@ -12,6 +12,7 @@ public class CheckBox {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
+
         //https://the-internet.herokuapp.com/checkboxes
         String url = "https://the-internet.herokuapp.com/checkboxes";
         driver.get(url);

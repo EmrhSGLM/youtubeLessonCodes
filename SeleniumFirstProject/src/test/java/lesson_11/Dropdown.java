@@ -17,6 +17,8 @@ public class Dropdown {
 
         driver.get("https://www.amazon.com/");
 
+
+
         // 1. islem Dropdown locate islemi yapılır
         WebElement dropdownElement = driver.findElement(By.id("searchDropdownBox"));
 
