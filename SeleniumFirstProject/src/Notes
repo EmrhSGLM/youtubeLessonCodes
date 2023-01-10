@@ -1,0 +1,12 @@
+// Actions Class Lessons
+
+*  Actions class’ini kullanarak mouse ve Keyboard ile yapabilecegimiz tum islevleri gerceklestirebiliriz.
+*  Actions Class birçok kullanışlı mouse ve klavye işlevine sahiptir.
+
+=> Mouse Actions
+
+➢ doubleClick ( ): WebElement’e çift tıklama yapar
+➢ clickAndHold ( ): WebElement uzerinde click yapili olarak bizden komut bekler.
+➢ dragAndDrop ( ): WebElement’i bir noktadan diğerine sürükler ve bırakır
+➢ moveToElement ( ): Mouse’u istedigimiz WebElement’in uzerinde tutar
+➢ contextClick ( ): Mouse ile istedigimiz WebElement’e sag tiklama yapar.
