@@ -1,4 +1,4 @@
-// Actions Class Lessons
+                         Actions Class Lessons
 
 *  Actions class’ini kullanarak mouse ve Keyboard ile yapabilecegimiz tum islevleri gerceklestirebiliriz.
 *  Actions Class birçok kullanışlı mouse ve klavye işlevine sahiptir.
@@ -10,3 +10,11 @@
 ➢ dragAndDrop ( ): WebElement’i bir noktadan diğerine sürükler ve bırakır
 ➢ moveToElement ( ): Mouse’u istedigimiz WebElement’in uzerinde tutar
 ➢ contextClick ( ): Mouse ile istedigimiz WebElement’e sag tiklama yapar.
+
+=> Keyboard Actions
+
+➢ sendKeys ( ): Öğeye bir dizi anahtar gönderir
+➢ keyDown ( ): Klavyede tuşa basma işlemi gerçekleştirir
+➢ keyUp ( ): Klavyede tuşu serbest bırakma işlemi gerçekleştirir
+=> Bu methodlar ile islem yapmak icin Keys anahtar kelimesi ile kullanılır
+

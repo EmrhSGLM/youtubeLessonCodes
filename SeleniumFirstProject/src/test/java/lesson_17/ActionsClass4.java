@@ -22,6 +22,7 @@ public class ActionsClass4 {
         actions.dragAndDrop(tasinacakElement,tasinacakHedefElement).perform();
         Thread.sleep(2000);
 
+
         // “Drop here” yazisi yerine “Dropped!” oldugunu test edin
         String expectedResult = "Dropped!";
         String actualResult = tasinacakHedefElement.getText();
