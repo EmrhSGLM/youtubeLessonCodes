@@ -1,0 +1,12 @@
+
+                File Exists
+
+* Selenium ile windows uygulamalarını test edemiyoruz.
+
+* Bilgisayarımızda bir dosyanın olup olmadıgını kontrol etmek istedigimizde java'dan yararlanıyoruz.
+
+=> System.getProperyt("user.dir"); Icinde bulunan klasorun yolunu(Path) verir.
+=> System.getProperyt("user.home"); Bilgisayrimizda bulunan user(kullanıcının) path verir.
+=> Files.exists(Paths.get(filePath)); Bilgisayarinizda dosyanın olup olmadıgını kontrol eder
+
+* Indirilen bir dosyanın indirme klasorunde olup olmadıgını kontrol etmek icin bu java methodları kullanılır.
