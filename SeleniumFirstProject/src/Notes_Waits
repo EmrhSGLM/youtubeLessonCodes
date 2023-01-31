@@ -1,0 +1,72 @@
+
+        === WAITS IN SELENIUM ===
+
+1-) Implicit Wait
+
+    * Selenium’da Implicit Wait, web sürücüsüne “No Such Element Exception”
+      oluşturmadan önce belirli bir süre beklemesini söylemek için kullanılır. Varsayılan ayar 0’dır.
+
+    * Elementi buldugu an driver yoluna devam eder.
+
+    * Süreyi belirledikten sonra, web sürücüsü bir exception atmadan önce bu süreyi bekleyecektir.
+
+    * Syntax : driver.manage().timeouts().implicitlyWait(Durations.ofSeconds(10));
+
+2-) Explicit Wait
+
+    * Beklenen bir durum(expected condition) olduğunda veya "ElementNotVisibleException" exception'i atmadan
+     once belirlenen max sureyi beklemesini soylemek icin explicit wait kullanılır.
+
+     * Syntax:
+
+       =>  new WebDriverWait(driver, Duration.ofSeconds(30)).
+                                until(ExpectedConditions.elementToBeClickable(By.xpath("//a/h3")));
+
+       =>  WebDriverWait wait = new WebDriverWait(driver,Duration.ofSecond(30));
+
+           wait.until(ExpectedConditions.typeofExpectedCondition(By.locator(“valueoflocator”));
+
+       Syntaxı bir örnek ile açıklayacak olursak;
+
+       wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(“abc”));
+
+     * Expected Condition Cesitleri
+        alertIsPresent()
+        elementSelectionStateToBe()
+        elementToBeClickable()
+        elementToBeSelected()
+        frameToBeAvaliableAndSwitchToIt()
+        invisibilityOfTheElementLocated()
+        invisibilityOfElementWithText()
+        presenceOfAllElementsLocatedBy()
+        presenceOfElementLocated()
+        textToBePresentInElement()
+        textToBePresentInElementLocated()
+        textToBePresentInElementValue()
+        titleIs()
+        titleContains()
+        visibilityOf()
+        visibilityOfAllElements()
+        visibilityOfAllElementsLocatedBy()
+        visibilityOfElementLocated()
+
+3-) Fluent Wait
+
+    * Selenium’da Fluent Wait, web sürücüsünün bir koşulu beklemesi için maksimum süreyi ve Exception’ını
+    atmadan önce koşulu kontrol etmek istediğimiz sıklığı tanımlamak için kullanılır.Nesne bulunana veya zaman aşımı
+    gerçekleşene kadar düzenli aralıklarla web elementini kontrol eder.
+
+    * Syntax:
+
+      Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+        .withTimeout(Duration.ofSeconds(30))
+        .pollingEvery(Duration.ofSeconds(5))
+        .ignoring(Exception.class);
+
+      WebElement foo = wait.until(driver -> {
+        return driver.findElement(By.id("foo"));
+      });
+
+
+ Not :
+    Selenium Documents : https://www.selenium.dev/documentation/webdriver/waits/

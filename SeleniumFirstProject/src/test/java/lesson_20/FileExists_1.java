@@ -1,4 +1,4 @@
-package lesson_19.lesson_20;
+package lesson_20;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
